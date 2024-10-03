@@ -1,0 +1,75 @@
+{
+  "sertifikatExcel": [
+    {
+      "imageCertificate": "excel/basic.png",
+      "titleCertificate": "Excel Basic",
+      "categoryCertificate": "MySkills",
+      "decriptionCertificate": "This certificate was obtained after taking online training from MySkills in the basic excel program with materials including exploring the excel home tab, microsoft excel features, worksheets and workbooks, excel basic formulas, data cleansing, sort and filter, data formatting, aggregate data and conditional if-else."
+    },
+
+    {
+      "imageCertificate": "excel/intermediet.png",
+      "titleCertificate": "Excel Intermediate",
+      "categoryCertificate": "MySkills",
+      "decriptionCertificate": "This certificate was obtained after taking online training from MySkills in the intermediate excel program with materials such as lookup and intex match, intermediate data formatting, data visualization, chart using Ms. Excel, pivot table, intermediate math function, error handling, table features, date and time manipulation, logical and information functions, dynamic array formulas, printing and page setup, referencing cells and text formulas and interactive charts."
+    },
+
+    {
+      "imageCertificate": "excel/advanced.png",
+      "titleCertificate": "Excel Advanced",
+      "categoryCertificate": "MySkills",
+      "decriptionCertificate": "This certificate was obtained after taking online training from MySkills in the advanced Excel program with materials including power pivot, what-if analysis, macro VBA, and advanced charting techniques."
+    },
+
+    {
+      "imageCertificate": "excel/excel.png",
+      "titleCertificate": "Excel",
+      "categoryCertificate": "MySkills",
+      "decriptionCertificate": "Sertfikat ini didapatkan setelah mengikuti packages pelatihan daring dari MySkills dalam bidang program excel."
+    }
+  ],
+
+  "certificateDataAnalysis": [
+    {
+      "imageCertificate": "data-analyst/basic-data.png",
+      "titleCertificate": "Data Basic",
+      "categoryCertificate": "MySkills",
+      "decriptionCertificate": "This certificate was obtained after taking online training from MySkills in the basic data program with materials including understanding data, understanding business processes, data stories, data to insight, data stories vs dashboards, data-driven decisions, business value from data, business data and information management."
+    },
+
+    {
+      "imageCertificate": "data-analyst/power-BI.png",
+      "titleCertificate": "Power BI",
+      "categoryCertificate": "MySkills",
+      "decriptionCertificate": "This certificate is obtained after taking online training from MySkills in the Microsoft Power BI program with materials including Power BI Introduction, data preparation, data transformation basic, data transformation intermediate, data transformation advanced, data modeling fundamental, tables in data modeling, data analysis expressions formula, data analysis expressions advanced, visualization, reporting and dashboard, reporting and dashboardm data analytic in Power BI."
+    },
+
+    {
+      "imageCertificate": "data-analyst/python-fundamental.png",
+      "titleCertificate": "Python Fundamental",
+      "categoryCertificate": "MySkills",
+      "decriptionCertificate": "This certificate was obtained after following online training from MySkills in the Python Fundamentals program with material including introduction and installation, function in python, data structure in python, sting in python, regular expressions in python, search, match and find all, regular advanced expressions, list fundamentals in python, all about python dictionary, object-oriented programming, introduction to pandas, data visualization matplotlib, indexing, slicing, filtering and shorting, dataframe merge, feature extraction, feature engineering, dataframe aggregate, table reshaping, datetime, pandas datetime, data visualization type, data visualization seaborn, data visualization bokeh, data visualization plotly, study case: finance, transaction classification of fraud and non fraud, file handling and I/O in python, exception handling, virtual environment and package, decorators and context managers , generators and iterators, concurrency and parallelism, basic database interaction, advanced object-oriented programming, regular expressions, data sterilization and sorting."
+    },
+
+    {
+      "imageCertificate": "data-analyst/python-for-data-analysis.png",
+      "titleCertificate": "Python For Data Analysis",
+      "categoryCertificate": "MySkills",
+      "decriptionCertificate": "This certificate was obtained after taking online training from MySkills in the Python for Data Analysis program with materials including data import, data query, data cleansing, data binning & case statement, descriptive statistics & grouping and data visualization & correlation."
+    },
+
+    {
+      "imageCertificate": "data-analyst/data-analyst.png",
+      "titleCertificate": "Data Analysis",
+      "categoryCertificate": "MySkills",
+      "decriptionCertificate": "This certificate is obtained after taking online training from MySkills in the Data Analysis program with materials including fundamental data analysis, data analysis preparation, statistics, business metrics, marketing business metrics, product metrics, cohort & retention analysis, regression & inferential analysis, correlation analysis, hypothetical testing and AB test, clustering analysis, text analysis, data visualization and data communication."
+    },
+
+    {
+      "imageCertificate": "data-analyst/data-science.png",
+      "titleCertificate": "Data Science",
+      "categoryCertificate": "MySkills",
+      "decriptionCertificate": "This certificate was obtained after taking online training from MySkills in the Data Science program with materials including data science introduction, kaggle, github, and kedro, statistics 101 introduction, descriptive analysis, data visualization, probability and distribution, hypothesis testing, correlation analysis, introduction to data preprocessing and introduction to machine learning."
+    }
+  ]
+}
