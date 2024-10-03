@@ -54,7 +54,8 @@ $tabBtn.forEach((item) => {
 function openModal(imgSrc, title, category, description, link, event) {
   event.preventDefault();
   document.getElementById("myModal").style.display = "block";
-  document.getElementById("modalImg").src = "../assets/images/" + imgSrc;
+  document.getElementById("modalImg").src =
+    "../assets/images/isi-portfolio/" + imgSrc;
   document.getElementById("modalTitle").innerText = title;
   document.getElementById("modalCategory").innerText = category;
   document.getElementById("modalDescription").innerText = description;
