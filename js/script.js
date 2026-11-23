@@ -49,6 +49,72 @@ $tabBtn.forEach((item) => {
 });
 
 /**
+ * Contact form -> Google Sheet + notifikasi email (dengan proteksi spam)
+ */
+const SCRIPT_URL = "URL_WEB_APP_ANDA"; // ganti dengan URL Web App
+const MIN_FILL_MS = 3000; // minimal 3 detik sebelum form boleh dikirim
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+  const submitBtn = document.getElementById("submitBtn");
+  const formStatus = document.getElementById("formStatus");
+  const btnLabel = submitBtn.querySelector(".label-large");
+  const defaultLabel = btnLabel.textContent;
+  const tsField = document.getElementById("formTs");
+
+  // Catat waktu halaman dibuka
+  const loadedAt = Date.now();
+  tsField.value = loadedAt;
+
+  const showStatus = (text, color) => {
+    formStatus.textContent = text;
+    formStatus.style.color = color;
+  };
+
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const data = new FormData(contactForm);
+
+    // Honeypot terisi -> kemungkinan bot, pura-pura sukses
+    if (data.get("website")) {
+      showStatus("Terima kasih! Pesan Anda berhasil dikirim.", "green");
+      contactForm.reset();
+      return;
+    }
+
+    // Terlalu cepat -> minta coba lagi
+    if (Date.now() - loadedAt < MIN_FILL_MS) {
+      showStatus("Mohon tunggu beberapa detik, lalu coba kirim lagi.", "red");
+      return;
+    }
+
+    submitBtn.disabled = true;
+    btnLabel.textContent = "Mengirim...";
+    formStatus.textContent = "";
+
+    try {
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        body: data,
+        mode: "no-cors",
+      });
+
+      showStatus("Terima kasih! Pesan Anda berhasil dikirim.", "green");
+      contactForm.reset();
+      tsField.value = Date.now(); // reset waktu untuk pengiriman berikutnya
+    } catch (error) {
+      console.error("Error:", error);
+      showStatus("Gagal mengirim pesan. Silakan coba lagi.", "red");
+    } finally {
+      submitBtn.disabled = false;
+      btnLabel.textContent = defaultLabel;
+    }
+  });
+}
+
+/**
  * ModalBox
  */
 function openModal(imgSrc, title, category, description, link, event) {
