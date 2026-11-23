@@ -51,7 +51,7 @@ $tabBtn.forEach((item) => {
 /**
  * Contact form -> Google Sheet + notifikasi email (dengan proteksi spam)
  */
-const SCRIPT_URL = "URL_WEB_APP_ANDA"; // ganti dengan URL Web App
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyf5D7Fhz6mqlHEhP1OSJEsXY4l8pU1RfCI82k-wK3dLNTpfcNCscmcpz9DbO2Vx-WVsQ/exec";
 const MIN_FILL_MS = 3000; // minimal 3 detik sebelum form boleh dikirim
 
 const contactForm = document.getElementById("contactForm");
