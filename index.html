@@ -850,46 +850,34 @@
                 </div>
 
                 <div class="contact-form">
-                  <h3 class="title-large">Let’s Work Together.</h3>
+  <h3 class="title-large">Let's Work Together.</h3>
 
-                  <form action="" method="post" class="input-wrapper">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Name*"
-                      required
-                      class="input-field"
-                    />
+  <form id="contactForm" class="input-wrapper">
+    <input type="text" name="name" placeholder="Name*" required maxlength="100" class="input-field" />
 
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email*"
-                      required
-                      class="input-field"
-                    />
+    <input type="email" name="email" placeholder="Email*" required maxlength="150" class="input-field" />
 
-                    <input
-                      type="text"
-                      name="subject"
-                      placeholder="Subject"
-                      class="input-field"
-                    />
+    <input type="text" name="subject" placeholder="Subject" maxlength="150" class="input-field" />
 
-                    <textarea
-                      name="message"
-                      placeholder="Message*"
-                      required
-                      class="textarea"
-                    ></textarea>
+    <textarea name="message" placeholder="Message*" required maxlength="2000" class="textarea"></textarea>
 
-                    <button class="btn" type="submit">
-                      <span class="label-large">Send Message</span>
+    <!-- Honeypot: jangan dihapus, jangan diisi -->
+    <div class="hp-field" aria-hidden="true">
+      <label for="website">Jangan isi kolom ini</label>
+      <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+    </div>
 
-                      <div class="state-layer"></div>
-                    </button>
-                  </form>
-                </div>
+    <!-- Time trap: diisi otomatis oleh script.js -->
+    <input type="hidden" name="ts" id="formTs" />
+
+    <button class="btn" type="submit" id="submitBtn">
+      <span class="label-large">Send Message</span>
+      <div class="state-layer"></div>
+    </button>
+
+    <p id="formStatus" aria-live="polite"></p>
+  </form>
+</div>
               </div>
             </section>
           </div>
