@@ -715,6 +715,15 @@ body {
   #CONTACT
 \*-----------------------------------*/
 
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
 .contact-tab {
   padding-block-end: 0;
 }
